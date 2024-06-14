@@ -1,0 +1,31 @@
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    url: jdbc:mysql://localhost:3306/climbing_show?allowPublicKeyRetrieval=true&userSSL=false&serverTimezone=UTC&userLegacyDatetimeCode=false
+    username: root
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 3
+      leak-detection-threshold: 10000
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    database: mysql
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: false
+        hbm2ddl:
+          auto: none
+---
+
+---
+
+---
+
+---
+
+---
