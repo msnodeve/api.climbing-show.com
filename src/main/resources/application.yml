@@ -27,7 +27,7 @@ cors:
     credentials: true
     methods: [ "*" ]
     headers: [ "*" ]
-    origin-patterns: [ "localhost:*"]
+    origin-patterns: [ "http://localhost:3000" ]
 ---
 
 ---
