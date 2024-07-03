@@ -20,6 +20,14 @@ spring:
         format_sql: false
         hbm2ddl:
           auto: none
+
+cors:
+  allowed:
+    pattern: "/**"
+    credentials: true
+    methods: [ "*" ]
+    headers: [ "*" ]
+    origin-patterns: [ "localhost:*"]
 ---
 
 ---
